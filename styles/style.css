@@ -158,7 +158,19 @@ hr{
     .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .blogs, .courses{
+    .players, .blogs, .courses{
+        flex-direction: column;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .players, .blogs, .courses{
         flex-direction: column;
     }
 }
